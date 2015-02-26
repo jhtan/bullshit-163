@@ -20,13 +20,13 @@
 %\setlength{\parindent}{0pt}
 
 %\renewcommand*{\familydefault}{\sfdefault}
-\newcommand{\numberOfProblems}{9}
+\newcommand{\numberOfProblems}{8}
 
 \begin{document}
 
 \begin{enumerate}
   \newcounter{i}
-  \forloop{i}{1}{\value{i} < \numberOfProblems}{
+  \forloop{i}{1}{\value{i} < \numexpr\numberOfProblems+1\relax}{
   \item \input{statement/\arabic{i}} \\
     \textbf{Solución} \\
     \IfFileExists{solution/\arabic{i}}{
