@@ -27,7 +27,13 @@
 \begin{enumerate}
   \newcounter{i}
   \forloop{i}{1}{\value{i} < \numberOfProblems}{
-  \item \input{\arabic{i}}
+  \item \input{statement/\arabic{i}} \\
+    \textbf{Solución} \\
+    \IfFileExists{solution/\arabic{i}}{
+      \input{solution/\arabic{i}}
+    }{
+      I accidentally the whole solution $:($
+    }
   }
 \end{enumerate}
 
