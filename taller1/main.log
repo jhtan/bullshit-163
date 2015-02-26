@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.14)  26 FEB 2015 19:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.14)  26 FEB 2015 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,26 +586,38 @@ e
 \c@lstlisting=\count130
 \c@i=\count131
 
-(./1.tex) (./2.tex) (./3.tex) (./4.tex) (./5.tex) (./6.tex) (./7.tex) (./8.tex)
+(./statement/1.tex)
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) (./statement/2.tex)
+(./statement/3.tex) (./statement/4.tex) (./statement/5.tex) (./statement/6.tex)
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./main.aux
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./statement/7.tex)
+(./statement/8.tex) [2] (./main.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5870 strings out of 495059
- 78833 string characters out of 3182029
- 156643 words of memory out of 3000000
- 8951 multiletter control sequences out of 15000+200000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 5901 strings out of 495059
+ 79488 string characters out of 3182029
+ 155643 words of memory out of 3000000
+ 8966 multiletter control sequences out of 15000+200000
+ 5647 words of font info for 23 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,5n,35p,1044b,237s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on main.pdf (2 pages, 26217 bytes).
+ 38i,5n,35p,1044b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on main.pdf (2 pages, 36576 bytes).
 PDF statistics:
- 15 PDF objects out of 1000 (max. 8388607)
- 9 compressed objects within 1 object stream
+ 19 PDF objects out of 1000 (max. 8388607)
+ 12 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
