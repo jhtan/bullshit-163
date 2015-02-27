@@ -24,15 +24,28 @@
 
 \begin{document}
 
+\newcommand{\solutionBox} [1] {
+  \begin{center}
+    \colorbox{blue!20}{
+      \begin{minipage}{\textwidth}
+        \textsc{Solución} \\
+        #1
+      \end{minipage}
+    }
+  \end{center}
+}
+
 \begin{enumerate}
   \newcounter{i}
   \forloop{i}{1}{\value{i} < \numexpr\numberOfProblems+1\relax}{
   \item \input{statement/\arabic{i}} \\
-    \textbf{Solución} \\
-    \IfFileExists{solution/\arabic{i}}{
-      \input{solution/\arabic{i}}
-    }{
-      I accidentally the whole solution $:($
+
+    \solutionBox{
+      \IfFileExists{solution/\arabic{i}}{
+        \input{solution/\arabic{i}}
+      }{
+        I accidentally the whole solution $:($
+      }
     }
   }
 \end{enumerate}
