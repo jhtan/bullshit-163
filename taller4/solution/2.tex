@@ -1,0 +1,17 @@
+\textbf{Requerimientos}
+\begin{itemize}
+\item La información del campo minado, debe ser representada gráficamente, en forma de una cuadrícula, donde cada cuadro representa una celda.
+\item Inicialmente, la información de todas las celdas, está oculta.
+\item El usuario puede pedir a cada una de las celdas que muestre su información.
+\item Las celdas solo pueden ser de dos tipos: mina o no-mina.
+\item Las minas deben causar un Game Over al mostrar su información.
+\item El usuario puede marcar una celda, para indicar que en esa celda hay una mina.
+\item Si todas las minas han sido marcadas, y ninguna no-minas está marcada, el usuario gana.
+\item La información de una no-mina, es un número, que indica la cantidad de minas que están en sus vecindades. La siguiente representación lo explica mejor, la ``o'' indican una celda, y las ``x''s, indican sus vecindades
+  \begin{lstlisting}
+    xxx
+    xox
+    xxx
+  \end{lstlisting}
+\item Cuando la información de una no-mina, cuyo número es 0, es pedida, todas las no-minas con el número 0 que estén en sus vecindades también muestran su información.
+\end{itemize}

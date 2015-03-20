@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{enumerate}
+\usepackage{forloop}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphics}
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{setspace}
+\usepackage{xcolor}
+\lstset{inputencoding=utf8/latin1}
+
+%\usepackage[margin=1cm]{geometry}
+\setlength{\parskip}{0.5cm plus4mm minus3mm}
+%\setlength{\parindent}{0pt}
+
+%\renewcommand*{\familydefault}{\sfdefault}
+\newcommand{\numberOfProblems}{7}
+
+\begin{document}
+
+\title{Taller 4: Problemas de Requerimientos con UML}
+\date{\today}
+\author{Jhonatan I. Castro Rocabado \\ Ruth Margarita García López}
+
+\maketitle
+
+\newcommand{\solutionBox} [1] {
+  \begin{center}
+    \colorbox{blue!20}{
+      \begin{minipage}[\textheight]{\textwidth}
+        \textsc{Solución} \\
+        #1
+      \end{minipage}
+    }
+  \end{center}
+}
+
+\begin{enumerate}
+  \newcounter{i}
+  \forloop{i}{1}{\value{i} < \numexpr\numberOfProblems+1\relax}{
+  \item \input{statement/\arabic{i}} \\
+
+    \solutionBox{
+      \IfFileExists{solution/\arabic{i}}{
+        \input{solution/\arabic{i}}
+      }{
+        I accidentally the whole solution :(
+      }
+    }
+  }
+\end{enumerate}
+
+\end{document}
