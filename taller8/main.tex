@@ -21,25 +21,24 @@
 %\setlength{\parindent}{0pt}
 
 %\renewcommand*{\familydefault}{\sfdefault}
-\newcommand{\numberOfProblems}{4}
+\newcommand{\numberOfProblems}{3}
 
 \begin{document}
 
-\title{Taller 7}
+\title{Taller 8: Problemas de programación Java}
 \date{\today}
 \author{Jhonatan I. Castro Rocabado \\ Ruth Margarita García López}
 
 \maketitle
 
 \newcommand{\solutionBox} [1] {
-  \textsc{Solución} \\
   #1
 }
 
 \begin{enumerate}
   \newcounter{i}
   \forloop{i}{1}{\value{i} < \numexpr\numberOfProblems+1\relax}{
-  \item \input{statement/\arabic{i}} \\
+  \item \input{statement/\arabic{i}}
 
     \solutionBox{
       \IfFileExists{solution/\arabic{i}}{
