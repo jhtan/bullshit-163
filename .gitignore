@@ -23,6 +23,7 @@
 *.out
 *.synctex.gz
 *.pdf
+*.class
 
 #Emacs
 *~
