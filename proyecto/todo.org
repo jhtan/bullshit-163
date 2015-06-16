@@ -1,0 +1,5 @@
+
+* TODO listar diagramas
+* TODO índice '¬' 
+** objetivos y demás hueas
+** diagramas
